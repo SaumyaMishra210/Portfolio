@@ -9,25 +9,26 @@
 		</div>
 		<div class="row">
 			<div class="col-md-9 mb-5">
-				<form action="" style="color: whitesmoke">
+				<div class="mb-4" style="color: #ffc107">{{ error_message }}</div>
+				<form method="post" style="color: whitesmoke">
+					{% csrf_token %}
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="inputname">Your Name</label>
-							<input type="text" class="form-control" id='inputname'>
+							<input type="text" class="form-control" id='inputname' name="username" required>
 						</div>
 						<div class="form-group col-md-6">
 							<label for="inputemail">Your Email</label>
-							<input type="text" class="form-control" id='inputemail'>
+							<input type="text" class="form-control" id='inputemail' name="email" required>
 						
 						</div>
 						<div class="form-group col-md-12">
 							<label for="inputextarea">Your Message</label>
-							<textarea class="form-control" id='inputextarea'>
-						</textarea>
+							<textarea class="form-control" id='inputextarea' name="msg" required></textarea>
 						</div>
-						<button class="btn btn-primary mt-3 ml-2"  type="submit">Submit</button>
+						<button class="btn btn-primary mt-3 ml-2" type="submit">Submit</button>
 					</div>
-				</form>5
+				</form>
 			</div>
 			<div class="col-md-3 text-center mb-8" style="color: whitesmoke">
 				<ul class="list-unstyled">
