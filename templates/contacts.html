@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class="container mt-5">
+		<h1 class="text-warning mb-5 border-bottom">Contact us</h1>
+		<div class="row mb-5 text-white">
+			<p class="max-auto mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at
+				consectetur dolore, dolorem ducimus, eaque earum exercitationem incidunt iste minus uibusdam sit vel
+				voluptates voluptatum?</p>
+		</div>
+		<div class="row">
+			<div class="col-md-9 mb-5">
+				<form action="" style="color: whitesmoke">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputname">Your Name</label>
+							<input type="text" class="form-control" id='inputname'>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="inputemail">Your Email</label>
+							<input type="text" class="form-control" id='inputemail'>
+						
+						</div>
+						<div class="form-group col-md-12">
+							<label for="inputextarea">Your Message</label>
+							<textarea class="form-control" id='inputextarea'>
+						</textarea>
+						</div>
+						<button class="btn btn-primary mt-3 ml-2"  type="submit">Submit</button>
+					</div>
+				</form>5
+			</div>
+			<div class="col-md-3 text-center mb-8" style="color: whitesmoke">
+				<ul class="list-unstyled">
+					<li class="col-md-4">
+						<i class="fas fa-map-marker-alt fa-2x i-color"></i>
+						<p> Ranchi, Jharkhand , india</p>
+					</li>
+					<li class="col-md-4">
+						<i class="fas fa-phone fa-2x i-color"></i>
+						<p>+91 90000000002</p>
+					</li>
+					<li class="col-md-4">
+						<i class="fas fa-envelope fa-2x i-color"></i>
+						<p>contact@gmail.com</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="text-center">
+		<a href="#" target="_blank" class="fab fa-twitter i-color mr-3"></a>
+		<a href="#" target="_blank" class="fab fa-facebook i-color mr-3"></a>
+		<a href="#" target="_blank" class="fab fa-instagram i-color mr-3"></a>
+		<a href="#" target="_blank" class="fab fa-dribbble i-color mr-3"></a>
+	
+	</div>
+{% endblock content %}
